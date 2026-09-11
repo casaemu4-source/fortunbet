@@ -1,0 +1,444 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Plataforma Verificada | FortunBet</title>
+  <meta name="description" content="Plataforma verificada, atención 24hs" />
+  <link rel="icon" type="image/png" href="https://static-assets.app/favicon.jpg" />
+  <meta name="theme-color" content="#120c1f" />
+
+<style>
+    :root{
+      --bg-1:#160f24;
+      --bg-2:#25153e;
+      --bg-3:#331b57;
+      --text:#ffffff;
+      --muted:#d8d0e8;
+      --green:#25d366;
+      --green-dark:#16a34a;
+      --gold-2:#ffdf9a;
+      --line:rgba(255,255,255,.12);
+      --shadow:0 18px 40px rgba(0,0,0,.28);
+      --shadow-soft:0 10px 26px rgba(0,0,0,.18);
+      --pill:999px;
+      --maxw:520px;
+    }
+*{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+body{
+      font-family:Segoe UI,Arial,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top, rgba(255,215,140,.14), transparent 30%),
+        linear-gradient(180deg,var(--bg-3) 0%, var(--bg-2) 30%, var(--bg-1) 100%);
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+a{text-decoration:none;color:inherit}
+    img{display:block;max-width:100%;height:auto}
+.page{
+      width:100%;
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:14px 16px 100px;
+    }
+header{
+      padding:10px 14px 2px;
+      text-align:center;
+    }
+.wa-header{
+      width:106px;
+      height:28px;
+      margin:0 auto;
+      opacity:.96;
+    }
+.hero{
+      text-align:center;
+      padding-top:8px;
+    }
+.brand-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      margin:0 auto 18px;
+      padding:10px 16px;
+      border-radius:var(--pill);
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.14);
+      box-shadow:var(--shadow-soft);
+      backdrop-filter:blur(8px);
+    }
+.brand-dot{
+      width:10px;
+      height:10px;
+      border-radius:50%;
+      background:linear-gradient(180deg,var(--green),#7cff9d);
+      box-shadow:0 0 14px rgba(37,211,102,.6);
+    }
+.brand-text{
+      font-size:13px;
+      font-weight:700;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      color:#efe8ff;
+    }
+.logo-wrap{
+      position:relative;
+      width:136px;
+      height:136px;
+      margin:0 auto 18px;
+    }
+.logo-glow{
+      position:absolute;
+      inset:-12px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(245,196,107,.24) 0%, rgba(245,196,107,0) 70%);
+      filter:blur(6px);
+      z-index:0;
+    }
+.logo-circle{
+      position:relative;
+      z-index:1;
+      width:120px;
+      height:120px;
+      margin:0 auto;
+      border-radius:50%;
+      overflow:hidden;
+      border:3px solid rgba(255,255,255,.18);
+      box-shadow:var(--shadow);
+      background:#2b2141;
+    }
+h1{
+      margin:0 0 34px 0;
+      font-size:33px;
+      line-height:1.02;
+      font-weight:800;
+      letter-spacing:-.03em;
+    }
+.highlight{
+      display:block;
+      margin-top:6px;
+      color:var(--gold-2);
+    }
+.offer{
+      margin:20px auto 14px;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:12px 18px;
+      border-radius:var(--pill);
+      background:linear-gradient(180deg,#fff7e7,#f7dfb3);
+      color:#47310a;
+      font-size:15px;
+      font-weight:800;
+      box-shadow:0 12px 30px rgba(0,0,0,.18);
+    }
+.cta{
+      touch-action:manipulation;
+      -webkit-tap-highlight-color:transparent;
+      user-select:none;
+      will-change:transform;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      width:100%;
+      max-width:360px;
+      margin:0 auto 10px;
+      padding:16px 22px;
+      border-radius:var(--pill);
+      background:linear-gradient(180deg,var(--green),var(--green-dark));
+      color:#fff;
+      font-size:17px;
+      font-weight:800;
+      box-shadow:0 14px 30px rgba(37,211,102,.24);
+      border:0;
+      cursor:pointer;
+    }
+.cta:active{
+      transform:scale(.98);
+    }
+.cta-arrow{
+      display:inline-block;
+      animation:moveArrow 1.8s infinite ease-in-out;
+    }
+@keyframes moveArrow{
+      0%,100%{transform:translateX(0)}
+      50%{transform:translateX(5px)}
+    }
+.offer-below{
+      margin:10px auto 12px;
+      font-size:13px;
+      padding:9px 14px;
+      box-shadow:0 8px 22px rgba(0,0,0,.14);
+    }
+.micro-proof{
+      margin:10px auto 0;
+      color:#d5ffc6;
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      opacity:.95;
+    }
+.panel{
+      background:rgba(255,255,255,.08);
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:18px;
+      box-shadow:var(--shadow-soft);
+      backdrop-filter:blur(10px);
+      margin-top:14px;
+    }
+.limits-main{
+      text-align:center;
+      font-size:16px;
+      font-weight:800;
+      line-height:1.4;
+      color:#fff;
+    }
+.limits-main span{
+      color:#7dff9c;
+    }
+.limits-sub{
+      margin-top:8px;
+      text-align:center;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+.section-title{
+      font-size:13px;
+      font-weight:800;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      color:#fff0c9;
+      text-align:center;
+      margin-bottom:14px;
+    }
+.payments-logos{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+.payments-logos img{
+      background:#fff;
+      border-radius:14px;
+      padding:8px 14px;
+      height:42px;
+      width:auto;
+      object-fit:contain;
+      box-shadow:0 10px 24px rgba(0,0,0,.18);
+    }
+.happy-customers{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:linear-gradient(135deg, rgba(37,211,102,.22), rgba(255,255,255,.1));
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:var(--pill);
+      padding:9px 14px;
+      margin-top:16px;
+      font-size:12px;
+      color:#fff;
+      font-weight:800;
+      box-shadow:var(--shadow-soft);
+      backdrop-filter:blur(8px);
+    }
+.avatars{
+      display:flex;
+      margin-right:10px;
+      min-width:56px;
+    }
+.avatar{
+      width:22px;
+      height:22px;
+      border-radius:50%;
+      border:1.5px solid white;
+      margin-left:-6px;
+      object-fit:cover;
+      background:#d8d8d8;
+    }
+.trustpilot-container{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      flex-wrap:wrap;
+      background:linear-gradient(180deg,#fff,#f8faf9);
+      border:1px solid #e6e6e6;
+      border-radius:16px;
+      padding:12px 12px;
+      margin-top:16px;
+      box-shadow:0 14px 30px rgba(0,0,0,.12);
+    }
+.trustpilot-text{font-size:13px;font-weight:800;color:#151515}
+    .trustpilot-rating{font-size:11px;font-weight:600;color:#444}
+    .trustpilot-image{width:60px;height:auto}
+    .trustpilot-logo{width:74px;height:auto}
+.footer{
+      text-align:center;
+      font-size:12px;
+      color:#c1b8d7;
+      margin-top:22px;
+    }
+.bono-bar{
+      position:fixed;
+      left:0;
+      right:0;
+      bottom:0;
+      z-index:999;
+      background:linear-gradient(90deg,var(--green-dark),var(--green));
+      color:#fff;
+      text-align:center;
+padding:12px 12px calc(12px + env(safe-area-inset-bottom));
+      font-weight:800;
+      font-size:14px;
+      box-shadow:0 -8px 24px rgba(0,0,0,.18);
+    }
+@media (max-width:480px){
+      h1{font-size:28px}
+      .cta{max-width:none}
+    }
+  </style>
+</head>
+<body>
+<img
+    height="1"
+    width="1"
+    style="display:none"
+    src="#"
+    alt=""
+  />
+<main class="page">
+<section class="hero">
+<div class="brand-badge">
+        <span class="brand-dot"></span>
+        <span class="brand-text">Plataforma Verificada</span>
+      </div>
+<div class="logo-wrap">
+        <div class="logo-glow"></div>
+<div class="logo-circle">
+          <img
+            src="C:\Users\Staylus\Desktop\fontun\fortunbet.jpg"
+            alt="FortunBet"
+            width="116"
+            height="116"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
+      </div>
+<h1>
+        <span class="highlight">Atención premium</span>
+      </h1>
+<a
+        href="#"
+        class="cta"
+        data-wa-click
+        data-landing="LP1"
+        data-btn="BTN1"
+      >
+        <span>💬</span>
+        <span>HABLAR POR WHATSAPP</span>
+        <span class="cta-arrow">→</span>
+      </a>
+<div class="offer offer-below">
+        <div> 🍀 CREA TU CUENTA Y GANA 🍀</div>
+      </div>
+<div class="micro-proof">
+        +8372 clientes activos todos los días
+      </div>
+</section>
+<section class="panel">
+      <div class="limits-main">
+        MÍNIMO: <span>$3.000</span>
+        &nbsp; | &nbsp;
+        RECOMENDADO: <span>$10.000</span>
+      </div>
+<div class="limits-sub">
+        Juegos originales &nbsp; | &nbsp; atención 24hs
+      </div>
+    </section>
+<section class="panel">
+<div class="section-title">
+        Medios de pago disponibles
+      </div>
+<div class="payments-logos">
+<img
+          src="https://static-assets.app/transferencia.png"
+          alt="Transferencia bancaria"
+          width="126"
+          height="42"
+          loading="lazy"
+          decoding="async"
+        >
+<img
+          src="https://static-assets.app/mercadopago.png"
+          alt="Mercado Pago"
+          width="126"
+          height="42"
+          loading="lazy"
+          decoding="async"
+        >
+<img
+          src="https://static-assets.app/uala.png"
+          alt="Uala"
+          width="94"
+          height="42"
+          loading="lazy"
+          decoding="async"
+        >
+</div>
+</section>
+<div class="happy-customers">
+      <div class="avatars">
+        <img class="avatar" src="https://static-assets.app/1.jpg" alt="Cliente 1" width="22" height="22" loading="lazy" decoding="async">
+        <img class="avatar" src="https://static-assets.app/2.jpg" alt="Cliente 2" width="22" height="22" loading="lazy" decoding="async">
+        <img class="avatar" src="https://static-assets.app/3.jpg" alt="Cliente 3" width="22" height="22" loading="lazy" decoding="async">
+      </div>
+      <span class="text">+8372 CLIENTES GANANDO todos los días</span>
+    </div>
+<div class="trustpilot-container">
+<div class="trustpilot-text">
+        “Excelente”
+      </div>
+<img
+        class="trustpilot-image"
+        src="https://static-assets.app/estrellas.png"
+        alt="Estrellas"
+        width="60"
+        height="12"
+        loading="lazy"
+        decoding="async"
+      >
+<div class="trustpilot-rating">
+        Calificación 4.9/5 en
+      </div>
+<img
+        class="trustpilot-logo"
+        src="https://static-assets.app/estrella.png"
+        alt="Reviews"
+        width="74"
+        height="17"
+        loading="lazy"
+        decoding="async"
+      >
+</div>
+<div class="footer">
+      ©️ 2026 FortunBet777. Todos los derechos reservados.
+    </div>
+</main>
+<div class="bono-bar">
+     ESTAMOS CREANDO CUENTAS - Solicitá acceso ahora por WhatsApp
+  </div>
+
+
+  <script src="rotador-wa.js"></script>
+</body>
+</html>
